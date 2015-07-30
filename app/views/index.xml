@@ -1,37 +1,9 @@
 <Alloy>
 	<Window class="container">
-    <View class="number_area">
-      <Label id="number"></Label>
-      <Button id="clear">削除</Button>
-    </View>
-
-    <View class="button_area">
-      <View class="row">
-        <Button onClick="appendNumber" class="odd" id="button1">1</Button>
-        <Button onClick="appendNumber" class="even" id="button2">2</Button>
-        <Button onClick="appendNumber" class="odd" id="button3">3</Button>
-      </View>
-
-      <View class="row">
-        <Button onClick="appendNumber" class="even" id="button4">4</Button>
-        <Button onClick="appendNumber" class="odd" id="button5">5</Button>
-        <Button onClick="appendNumber" class="even" id="button6">6</Button>
-      </View>
-
-      <View class="row">
-        <Button onClick="appendNumber" class="odd" id="button7">7</Button>
-        <Button onClick="appendNumber" class="even" id="button8">8</Button>
-        <Button onClick="appendNumber" class="odd" id="button9">9</Button>
-      </View>
-
-      <View class="row">
-        <Button onClick="appendNumber" class="even" id="buttonStar">*</Button>
-        <Button onClick="appendNumber" class="odd" id="button0">0</Button>
-        <Button onClick="appendNumber" class="even" id="buttonSharp">#</Button>
-      </View>
-    </View>
-    <View class="command_area">
-      <Button id="mainButton">通話開始</Button>
-    </View>
+    <TextField hintText="あなたの名前" id="me" />
+    <TextField hintText="相手の名前" id="you" />
+    <Button onClick="login" id="login">ログイン</Button>
+    <Button onClick="connect" id="connect">発信</Button>
+    <Button onClick="disconnect" id="disconnect">終了</Button>
 	</Window>
 </Alloy>

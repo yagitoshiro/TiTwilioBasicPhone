@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+    <Button id="connect">通話開始</Button>
+    <Button id="disconnect">通話終了</Button>
+	</Window>
+</Alloy>

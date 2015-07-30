@@ -15,6 +15,7 @@ function disconnect(){
 if(Ti.Platform.osname === 'android'){
   intent = Ti.Android.createServiceIntent({url:'service.js', twilio: twilio});
   pendingIntent = Ti.Android.createPendingIntent({intent: intent});
+  Ti.App.addEventListener('inComingCall', incoming);
 }else{
   intent = null;
   pendingIntent = null;
@@ -32,9 +33,11 @@ function login(){
   });
 }
 
-twilio.addEventListener('incomingConnection', function(e){
+twilio.addEventListener('incomingConnection', incoming);
+
+function incoming(e){
   alert("電話だよ！");
-  twilio.acceptIncomingCall();
-});
+  twilio.acceptIncomingCall({});
+}
 
 $.index.open();

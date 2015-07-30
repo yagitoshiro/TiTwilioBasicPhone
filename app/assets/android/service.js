@@ -9,4 +9,4 @@ try{
   Ti.API.info(e);
 }
 Ti.API.info("end service");
-service.stop();
+//service.stop();

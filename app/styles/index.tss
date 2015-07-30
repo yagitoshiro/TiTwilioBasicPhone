@@ -3,20 +3,64 @@
 	backgroundColor:"white"
 }
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
-}
-
-"#label": {
-	font: {
-		fontSize: 12
-	}
+".number_area":{
+  top: 0,
+  height: 80,
+  width: Ti.UI.FILL,
+  backgroundColor: '#fff'
 },
 
-"Button":{
-  top: 50,
+".button_area":{
+  layout: 'vertical',
+  top: 0,
+  height: Ti.UI.SIZE,
+  width: Ti.UI.FILL,
+  backgroundColor: '#fff'
+},
+
+"#number":{
+  text: '',
+  left: 20,
+  right: 20,
+  color: '#000',
+  font: {fontSize: 24},
+  textAlign: 'center'
+},
+
+".even":{
+  font: {fontSize: 24},
+  backgroundColor: '#fff',
+  width: '33%',
+  height: 80,
+  borderWidth: 1,
+  borderColor: '#8f8f8f'
+},
+
+".odd":{
+  font: {fontSize: 24},
+  backgroundColor: '#fff',
+  width: '33%',
+  height: 80,
+  borderWidth: 1,
+  borderColor: '#8f8f8f'
+},
+
+".row":{
+  height: Ti.UI.SIZE,
+  width: Ti.UI.FILL,
+  layout: 'horizontal'
+},
+
+"#clear":{
+  right: 20,
   width: Ti.UI.SIZE,
   height: Ti.UI.SIZE
+},
+
+"#mainButton":{
+  width: 200,
+  height: 40,
+  borderRadius: 10,
+  backgroundColor: '#67BC45',
+  color: '#fff'
 }

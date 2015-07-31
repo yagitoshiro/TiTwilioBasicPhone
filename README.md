@@ -28,6 +28,12 @@ auth_token = '<AUTH TOKEN>'
 demo_app_sid = '<APP SID>'
 ```
 
+app/alloy.jsを編集します。
+```
+//ここを設置したサーバの情報に合わせます
+Alloy.Globals.authUrl = "<http://YOUR_AUTH_SERVER>";
+```
+
 これで準備完了です。
 
 ##初めてのTwilio

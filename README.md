@@ -4,6 +4,17 @@ TitaniumでTwilioを使うデモアプリです。Twilioからのリクエスト
 サーバは付属のserver.rbを利用してください。
 
 ##準備
+
+Twilioのアカウントを作成してください。
+http://twilio.kddi-web.com/
+
+TwiMLアプリを作成します。
+https://jp.twilio.com/user/account/apps/add
+
+Request URLを`http://設定したサーバのホスト/auth`に設定します。
+
+次にアプリをダウンロードしてimportします。
+
 ```
 $ git clone git@github.com:yagitoshiro/TiTwilioBasicPhone.git
 $ cd TiTwilioBasicPhone
@@ -16,6 +27,8 @@ account_sid = '<ACOUNT SID>'
 auth_token = '<AUTH TOKEN>'
 demo_app_sid = '<APP SID>'
 ```
+
+これで準備完了です。
 
 ##初めてのTwilio
 ```
